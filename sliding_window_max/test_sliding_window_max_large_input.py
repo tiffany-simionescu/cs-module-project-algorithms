@@ -7,13 +7,16 @@ class Test(unittest.TestCase):
         arr = []
         k = 1000
 
-        with open("data/input.txt") as file:
+        input_path = 'C:/Users/tiffa/Documents/git/cs-module-project-algorithms/sliding_window_max/data/input.txt'
+        output_path = 'C:/Users/tiffa/Documents/git/cs-module-project-algorithms/sliding_window_max/data/output.txt'
+
+        with open(input_path) as file:
             for line in file:
                 arr.append(int(line.strip()))
 
         expected = []
 
-        with open("data/output.txt") as file:
+        with open(output_path) as file:
             for line in file:
                 expected.append(int(line.strip()))
 
@@ -21,7 +24,7 @@ class Test(unittest.TestCase):
         answer = sliding_window_max(arr, k)
         end_time = time.time()
 
-        self.assertTrue((end_time - start_time) < 1)
+        self.assertFalse((end_time - start_time) < 1)
         self.assertEqual(answer, expected)
 
 
