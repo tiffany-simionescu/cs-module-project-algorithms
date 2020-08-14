@@ -2,6 +2,8 @@
 Input: a List of integers where every int except one shows up twice
 Returns: an integer
 '''
+
+### Module 3 and Module 4 ###
 def single_number(arr):
     # There will be a minimum len(arr) == 3
     if len(arr) < 3:
@@ -17,7 +19,7 @@ def single_number(arr):
         else:
             single_int.remove(num)
 
-    return single_int.pop()
+    return single_int.pop()    
 
 
 if __name__ == '__main__':
