@@ -2,6 +2,8 @@
 Input: an integer
 Returns: an integer
 '''
+
+### Module 3 and Module 4 ###
 def eating_cookies_small(n):
     # There are n cookies in a jar
     # Cookie Monster can eat 1, 2, 3 cookies at a time
@@ -27,8 +29,8 @@ if __name__ == "__main__":
     print(f"There are {eating_cookies_small(num_cookies)} ways for Cookie Monster to each {num_cookies} cookies")
 
 
+### Module 3 and Module 4 ###
 # For Larger Input
-
 def eating_cookies_large(n, cache):
     if n == 0:
         return 1
